@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>TodoList</title>
+    </head>
+
+    <body>
+        <div>
+            <h1>Lista de Tarefas</h1>
+            <input type="text" id="novatarefa" placeholder="digite uma tarefa" aria-label="Nova tarefa">
+            <button id="botao" type="button">Gravar</button>
+
+            <ul id="lista-tarefas" aria-live="polite"></ul>
+
+            <template id="template-tarefa">
+                <li>
+                    <label>
+                        <input type="checkbox" class="tarefa-check">
+                        <span class="texto"></span>
+                    </label>
+                    <button class="remover" aria-label="Remover tarefa">✕</button>
+                </li>
+            </template>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
